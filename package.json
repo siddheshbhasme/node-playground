@@ -1,0 +1,43 @@
+{
+  "name": "movie-metadata-service-siddheshbhasme",
+  "version": "1.0.0",
+  "description": "## Preface",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test-init": "./node_modules/jasmine-es6/bin/jasmine.js init",
+    "test": "./node_modules/.bin/mocha --require @babel/register --exit",
+    "coverage" : "nyc --reporter html --reporter text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyn-engineering/movie-metadata-service-siddheshbhasme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joyn-engineering/movie-metadata-service-siddheshbhasme/issues"
+  },
+  "homepage": "https://github.com/joyn-engineering/movie-metadata-service-siddheshbhasme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "chai-http": "^4.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "request": "^2.88.0"
+  }
+}
